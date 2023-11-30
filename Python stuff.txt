@@ -1,0 +1,14 @@
+name = input("Enter your name: ")
+price = float(input("Enter the price of the item: "))  # Convert input to a float
+discount_percentage = float(input("Enter the discount percentage (e.g., for 20%, enter 20): "))  
+amount_discounted = (discount_percentage / 100) * price
+final_price = price - amount_discounted
+
+print("Your name is:", name)
+print("Enter Price of Item:", price)
+print("The discount percentage is:", discount_percentage)
+print("Matthew Williams, here are your results:")
+print("Original item price: $%.2f" % price) 
+print("Amount discounted is: $%.2f" % amount_discounted) 
+print("-------")
+print("Final Sale Price: $%.2f" % final_price)
